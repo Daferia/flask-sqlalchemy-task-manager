@@ -28,11 +28,11 @@
                       <div id="modal-{{ category.id }}" class="modal modal-fixed-footer">
                           <div class="modal-content">
                               <h4>ARE YOU SURE YOU WANT TO DELETE THIS???</h4>
-                              <p>WARNING!!! This cannot be undone!</p>
+                              <h5 class="deep-orange-text accent-4"><strong>WARNING!!! This will delete all tasks and cannot be undone!</strong></h5>
                           </div>
                           <div class="modal-footer center-align">
-                            <a href="{{ url_for('delete_category', category_id=category.id)}}" class="modal-close btn red">YES</a>
-                            <a href="#modal.close()" class="modal-close btn green">CANCEL</a>
+                            <a href="{{ url_for('delete_category', category_id=category.id)}}" class="modal-close btn green">YES</a>
+                            <a href="#modal.close()" class="modal-close btn red">NO</a>
                         </div>
                       </div>
                 </div>
